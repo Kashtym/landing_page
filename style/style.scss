@@ -1,0 +1,297 @@
+//    root
+:root {
+   font-size: 20px;
+}
+
+$color-background: #FFFFFF;
+$color-banner: #FFD086;
+$color-orange-button: #EF781A;
+$color-orange-card: #FE7D34;
+$color-orange-sale: #FF800C;
+$color-green: #00D008;
+$color-white: white;
+$color-red: #FF0C0C;
+$color-dark-grey: rgb(53, 52, 52);
+
+
+body {
+   background-color: $color-background;
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+}
+
+.container {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+.flex-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+//    header
+
+.header {
+   height: 100px;
+   width: 100%;
+   background-color: $color-background;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   z-index: 1;
+   position: sticky;
+   top: 0;
+}
+
+.logo {
+   margin: 11px 0 12px;
+}
+
+.location-form {
+margin: 0 0 0 100px;
+   &__icon {
+      position: relative;
+      &::before {
+         content: '';
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 0;
+            bottom: 0;
+            left: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(../img/icon_location.svg);
+            width: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+      }
+   }
+
+   &__input {
+      display: block;
+         box-sizing: border-box;
+         width: 500px;
+         height: 50px;
+         border: 2px solid #323232;
+         border-radius: 5px;
+         padding: 0 0 0 40px;
+         font-size: 0.8rem;
+         font-weight: 500;
+         appearance: none;
+
+         &::placeholder {
+            color: #A1A1A1;
+         }
+
+         &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+         }
+   }
+}
+
+.button {
+   display: flex;
+   width: 100px;
+   height: 50px;
+   color: $color-white;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.8rem;
+   font-weight: 700;
+   border-radius: 5px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+   margin: 0 0 0 30px;
+
+   &_orange {
+      background-color: $color-orange-button;
+   }
+
+   &_green {
+      background-color: $color-green;
+   }
+
+}
+
+//    main
+
+.banner {
+   margin-top: 30px;
+   height: 380px;
+   background-color: $color-banner;
+   border-radius: 10px;
+
+   &__title-text {
+      width: 50%;
+      padding: 0 0 0 60px;
+   }
+
+   &__title {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0;
+   }
+
+   &__text {
+      font-size: 1rem;
+      line-height: 1.2;
+      font-weight: 500;
+      margin: 25px 0 0;
+      max-width: 460px;
+   }
+
+   &__image {
+      width: 50%;
+      scale: 0.92;
+      transform: rotate(5.11deg);
+      position: relative;
+      right: 1%;
+   }
+}
+
+.content {
+   position: relative;
+   padding-bottom: 20px;
+
+   &__search-form {
+      position: absolute;
+      right: 0;
+   }
+}
+
+.search-form {
+
+   &__input {}
+}
+
+.points {
+   margin-top: 30px;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-rows: 50px;
+   grid-auto-rows: 230px;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px 30px;
+
+   &__title {
+      grid-row: 1;
+      grid-column: 1/-1;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+   }
+}
+
+.card {
+   position: relative;
+   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+   border-radius: 10px;
+   overflow: hidden;
+
+   &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__back {
+      background-color: $color-white;
+      position: absolute;
+      bottom: 0;
+      height: 40%;
+      width: 100%;
+      font-size: 0;
+   }
+
+   &__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 10px 20px 14px;
+   }
+
+   &__time {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: $color-orange-card;
+      height: 30px;
+      border-radius: 5px;
+      margin: 0 0 0 20px;
+      padding: 8px 4px 0 33px;
+      font-size: 0.7rem;
+      font-weight: 600;
+
+      &::before {
+         content: url(../img/icon_time.svg);
+         margin: 0 8px 0 4px;
+         position: absolute;
+         top: 3px;
+         left: -1px;
+      }
+   }
+
+   &__cost {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: $color-green;
+      height: 30px;
+      border-radius: 5px;
+      margin: 0 0 0 18px;
+      padding: 8px 4px 0 33px;
+      font-size: 0.7rem;
+      font-weight: 600;
+
+      &::before {
+         content: url(../img/icon_delivery.svg);
+         margin: 0 8px 0 4px;
+         position: absolute;
+         top: 4px;
+         left: -1px;
+      }
+   }
+}
+
+.sale {
+   background-color: $color-red;
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      padding: 11px 21px;
+      border-radius: 5px;
+      color: $color-white;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+}
+
+.sale_popular {
+   background-color: $color-orange-sale;
+}
+
+//    footer
+
+.footer {
+   height: 100px;
+   background-color: $color-dark-grey;
+}
+
+.nav {
+list-style: none;
+   padding: 0;
+   &__elem {}
+
+   &__link {
+      text-decoration: none;
+      color: $color-white;
+      margin: 0 20px 0 0;
+   }
+}
+
+.icon {
+margin: 28px 0 27px 20px;
+   &__img {}
+}

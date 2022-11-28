@@ -1,12 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Product delivery service</title>
+   <!-- Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+   <!-- Style -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+   <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
+   <div class="header">
+      <header>
+         <div class="container flex-row">
+            <div class="flex-row">
+               <img src="./img/logo.png" alt="logo" class="logo">
+               <form name="location" class="location-form">
+                  <div class="location-form__icon">
+                     <input type="text" id="location" list="cities" placeholder="Вкажіть Ваше місто..."
+                     class="location-form__input">
+                  <datalist id="cities">
+                     <option value="Вінниця"></option>
+                     <option value="Дніпро"></option>
+                     <option value="Донецьк"></option>
+                     <option value="Житомир"></option>
+                     <option value="Запоріжжя"></option>
+                     <option value="Івано-Франківськ"></option>
+                     <option value="Київ"></option>
+                     <option value="Кропивницький"></option>
+                     <option value="Луганськ"></option>
+                     <option value="Луцьк"></option>
+                     <option value="Львів"></option>
+                     <option value="Миколаїв"></option>
+                     <option value="Одеса"></option>
+                     <option value="Полтава"></option>
+                     <option value="Рівне"></option>
+                     <option value="Суми"></option>
+                     <option value="Тернопіль"></option>
+                     <option value="Ужгород"></option>
+                     <option value="Харків"></option>
+                     <option value="Херсон"></option>
+                     <option value="Хмельницький"></option>
+                     <option value="Черкаси"></option>
+                     <option value="Чернівці"></option>
+                     <option value="Чернігів"></option>
+                  </datalist>
+                  </div>
+               </form>
+            </div>
+            <div class="flex-row">
+               <a href="#" class="button button_orange">Увійти</a>
+               <a href="#" class="button button_green">Кошик</a>
+            </div>
+         </div>
+      </header>
+   </div>
+
+   <main>
+      <section>
+         <div class="banner container flex-row">
+            <div class="banner__title-text">
+               <h1 class="banner__title">Сервіс доставки продуктів додому</h1>
+               <p class="banner__text">Улюблені страви із улюбленого ресторану до Вашого дому</p>
+            </div>
+            <img src="./img/banner.png" alt="" class="banner__image">
+         </div>
+      </section>
+      <div class="content container">
+         <form name="search" class="content__search-form search-form">
+            <input type="text" placeholder="Пошук страв та ресторанів..." class="search-form__input">
+         </form>
+         <section>
+            <div class="points">
+               <h2 class="points__title">Ресторани</h2>
+               <div class="card">
+                  <img src="./img/pic1.jpg" alt="1" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Макдональдз</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+                  <div class="sale sale_popular">
+                     Популярне
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic2.jpg" alt="2" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Mafia</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">75 грн.</p>
+                  </div>
+                  <div class="sale">
+                     Безкоштовна <br> доставка
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic3.jpg" alt="3" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">KFC</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+                  <div class="sale">
+                     Крильця у подарунок
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic4.jpg" alt="4" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Pizza House</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">1 грн.</p>
+                  </div>
+                  <div class="sale">
+                     Безкоштовна <br> доставка
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic5.jpg" alt="5" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Rukola</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic6.jpg" alt="6" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Lviv Croissans</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">75 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic7.jpg" alt="7" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Mamamia</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">1 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic8.jpg" alt="8" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Хлібний</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic9.jpg" alt="9" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Time Cafe</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">100 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic10.jpg" alt="10" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Salateira</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic11.jpg" alt="11" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Green 13</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic12.jpg" alt="12" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">VAPIANO</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic13.jpg" alt="13" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Папа Джон</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section>
+            <div class="points">
+               <h2 class="points__title">Магазини</h2>
+               <div class="card">
+                  <img src="./img/pic14.jpg" alt="14" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Фора</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic15.jpg" alt="15" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">АТБ</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">40 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic16.jpg" alt="16" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Silpo</h3>
+                     <p class="card__time">20 - 35 хв.</p>
+                     <p class="card__cost">50 грн.</p>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="./img/pic17.jpg" alt="17" class="card__img">
+                  <div class="card__back">
+                     <h3 class="card__title">Eva</h3>
+                     <p class="card__time">30 - 35 хв.</p>
+                     <p class="card__cost">1 грн.</p>
+                  </div>
+                  <div class="sale">
+                     Безкоштовна <br> доставка
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </main>
+   <div class="footer">
+      <footer>
+         <div class="container flex-row">
+            <nav>
+               <ul class="nav flex-row">
+                  <li class="nav__elem"><a href="#" class="nav__link">Про нас</a></li>
+                  <li class="nav__elem"><a href="#" class="nav__link">Контакти</a></li>
+                  <li class="nav__elem"><a href="#" class="nav__link">Партнери</a></li>
+               </ul>
+            </nav>
+            <div class="flex-row">
+               <a href="#" class="icon" target="_blank">
+                  <img src="./img/telegramm.png" alt="telegramm" class="icon__img">
+               </a>
+               <a href="#" class="icon" target="_blank">
+                  <img src="./img/facebook.png" alt="facebook" class="icon__img">
+               </a>
+               <a href="#" class="icon" target="_blank">
+                  <img src="./img/instagramm.png" alt="instagramm" class="icon__img">
+               </a>
+            </div>
+         </div>
+      </footer>
+   </div>
 </body>
+
 </html>
